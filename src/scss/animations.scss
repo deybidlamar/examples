@@ -1,0 +1,39 @@
+.animations {
+    background-color: $yellow-color;
+    height: 100vh;
+    padding: 2em;
+    @media screen and (min-width: 768px) {
+        height: 60vh;
+    }
+    @media screen and (min-width: 1200px) {
+        height: 70vh;
+    }
+    &__title {
+        @extend .box-model__title;
+        margin-bottom: 4em;
+    }
+}
+
+.triangle {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: $tomato-color;
+    width: 10em;
+    height: 10em;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    &--animation {
+        animation: ascending-triangle 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1 forwards;
+    }
+}
+
+@keyframes ascending-triangle {
+    0%,
+    100% {
+        transform: rotate(0) translateY(0);
+    }
+    50% {
+        transform: rotate(360deg) translateY(8rem);
+        background-color: $pink-color;
+    }
+}

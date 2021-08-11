@@ -1,0 +1,23 @@
+.transitions {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    &__title {
+        @extend .box-model__title;
+    }
+    &__block {
+        background-image: url(https://picsum.photos/1920/1080);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 90%;
+        height: 20em;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: .2em;
+        transition: .5s cubic-bezier(0.215, 0.610, 0.355, 1);
+        filter: blur(3px) grayscale(1);
+        &:hover {
+            filter: blur(0) grayscale(0);
+        }
+    }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/styles.css")
+    title Examples
+  body
+    header.header 
+      h1.header__title Examples 
+      p.header__description These are examples for the activity of box model, flexbox, grid, transformations, animations, transitions and SASS
+    
+    section.box-model
+      h2.box-model__title Box Model
+      figure.box-model__container 
+        img(src="https://picsum.photos/1280/720", alt="Img").box-model__image
+        figcaption.box-model__description This item is for sale.
+
+    section.flexbox
+      h2.flexbox__title Flexbox
+      div.flexbox__container
+        article.card
+          img(src="https://source.unsplash.com/random/1280x720", alt="").card__image
+          h3.card__title Basic
+          p.card__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia deleniti deserunt pariatur reiciendis nihil molestiae ab ad accusantium reprehenderit minus! Ex sapiente tempore minus id natus ipsa itaque, cupiditate reiciendis.
+        article.card
+          img(src="https://picsum.photos/1280/720", alt="").card__image
+          h3.card__title Premium
+          p.card__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia deleniti deserunt pariatur reiciendis nihil molestiae ab ad accusantium reprehenderit minus! Ex sapiente tempore minus id natus ipsa itaque, cupiditate reiciendis.
+        article.card
+          img(src="https://source.unsplash.com/random/1280x720", alt="").card__image
+          h3.card__title Gold
+          p.card__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia deleniti deserunt pariatur reiciendis nihil molestiae ab ad accusantium reprehenderit minus! Ex sapiente tempore minus id natus ipsa itaque, cupiditate reiciendis.
+
+    section.grid-nm
+      h2.grid__title Grid
+      .grid
+        nav.grid-menu 
+          a(href="#").grid-menu__item Home
+          a(href="#").grid-menu__item Bussiness
+          a(href="#").grid-menu__item Trends 
+          a(href="#").grid-menu__item Portfolio
+        
+        header.grid-header
+          h3.grid__title Tinaco's
+          p.grid__lead Lorem ipsum dolor sit amet.
+
+        main.grid__main
+          h2.grid__title Bootcamps
+          p.grid__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veritatis commodi ratione nihil nemo doloremque alias! Maiores, aliquid neque vel quaerat quasi laborum ipsa, et natus iste inventore deleniti qui.
+          p.grid__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veritatis commodi ratione nihil nemo doloremque alias! Maiores, aliquid neque vel quaerat quasi laborum ipsa, et natus iste inventore deleniti qui.
+          p.grid__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veritatis commodi ratione nihil nemo doloremque alias! Maiores, aliquid neque vel quaerat quasi laborum ipsa, et natus iste inventore deleniti qui.
+
+        aside.grid__trends
+          h2.grid__title Main Trends
+          ul.trends 
+            li.trends__item #box
+            li.trends__item #messi
+            li.trends__item #paroNacional 
+            li.trends__item #LaVueltaEspaña
+            li.trends__item #Martuchis
+            li.trends__item #RenuncieMinistra 
+        
+        footer.grid-footer 
+          small.grid-footer__texts &copy; 2021 All Rights Reserved. Designed by 
+            a(href="#").grid__link Deybi D. Lamar 
+
+    section.transformations 
+      h2.transformations__title Transformations
+      .tranformations__container 
+        .transformations__circle.transformations__circle--scale
+        .transformations__circle.transformations__circle--position
+
+    section.animations
+      h2.animations__title Animations 
+      div(title="Click on me").triangle#triangle
+    
+    section.transitions
+      h2.transitions__title Transitions
+      .transitions__block
+
+    script(src="js/scripts-min.js")

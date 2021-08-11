@@ -1,0 +1,29 @@
+.transformations {
+    padding: 2em;
+    &__title {
+        @extend .box-model__title;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+    &__circle {
+        background-color: $pink-color;
+        width: 15em;
+        height: 15em;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1em;
+        transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        &--scale:hover {
+            transform: scale(.5, .5);
+        }
+        &--position {
+            background-color: $tomato-color;
+        }
+        &--position:hover {
+            transform: translateX(-2em);
+        }
+    }
+}

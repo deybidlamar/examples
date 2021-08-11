@@ -1,0 +1,51 @@
+.flexbox {
+    background-color: $tomato-color;
+    padding: 3em 0;
+    &__title {
+        @extend .box-model__title;
+        color: $yellow-color;
+        letter-spacing: .07rem;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+            padding: 0 2em;
+        }
+        .card {
+            margin-left: auto;
+            margin-right: auto;
+            background-color: $yellow-color;
+            width: 90%;
+            text-align: center;
+            border-radius: .3em;
+            box-shadow: 0 .8em 1em transparentize($dark-color, .6);
+            @media screen and (min-width: 768px) {
+                width: 70%;
+            }
+            &__image {
+                border-top-left-radius: .3em;
+                border-top-right-radius: .3em;
+                max-width: 100%;
+                object-fit: cover;
+                display: block;
+            }
+            &__title {
+                color: $tomato-color;
+                font-size: 1.4rem;
+                @media screen and (min-width: 768px) {
+                    font-size: 1.6rem;
+                    ;
+                }
+            }
+            &__description {
+                padding: 0 1em;
+                @media screen and (min-width: 768px) {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
